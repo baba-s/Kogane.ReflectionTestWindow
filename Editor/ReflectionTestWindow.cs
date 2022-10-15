@@ -53,7 +53,7 @@ namespace Kogane.Internal
                 {
                     alignment = TextAnchor.UpperLeft,
                 };
-                var size = style.CalcSize( new GUIContent( m_result ) );
+                var size = style.CalcSize( new( m_result ) );
                 EditorGUILayout.SelectableLabel( m_result, style, GUILayout.Height( size.y ) );
                 m_scrollPosition = scope.scrollPosition;
             }
